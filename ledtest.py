@@ -4,7 +4,7 @@ import time
 GPIO.setmode(GPIO.BOARD)  
 # 输出模式  
 GPIO.setup(11, GPIO.OUT)  
-#设定11号引脚为基本输出模式
+# 设定11号引脚为基本输出模式
   
 while True:  
     GPIO.output(11, GPIO.HIGH)  

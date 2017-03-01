@@ -9,14 +9,14 @@ import time
 state = 'stop'
 
 def init():
-    GPIO.setup(3,GPIO.OUT)
-    GPIO.setup(5,GPIO.OUT)
-    GPIO.setup(7,GPIO.OUT)
-    GPIO.setup(11,GPIO.OUT)
-    GPIO.setup(13,GPIO.OUT)
-    GPIO.setup(15,GPIO.OUT)
-    GPIO.setup(19,GPIO.OUT)
-    GPIO.setup(21,GPIO.OUT)
+    GPIO.setup(3, GPIO.OUT)
+    GPIO.setup(5, GPIO.OUT)
+    GPIO.setup(7, GPIO.OUT)
+    GPIO.setup(11, GPIO.OUT)
+    GPIO.setup(13, GPIO.OUT)
+    GPIO.setup(15, GPIO.OUT)
+    GPIO.setup(19, GPIO.OUT)
+    GPIO.setup(21, GPIO.OUT)
  
 def stop():
     global state
@@ -24,14 +24,14 @@ def stop():
         return
     init()
     state = 'stop'
-    GPIO.output(3,GPIO.LOW)
-    GPIO.output(5,GPIO.LOW)
-    GPIO.output(7,GPIO.LOW)
-    GPIO.output(11,GPIO.LOW)
-    GPIO.output(13,GPIO.LOW)
-    GPIO.output(15,GPIO.LOW)
-    GPIO.output(19,GPIO.LOW)
-    GPIO.output(21,GPIO.LOW)
+    GPIO.output(3, GPIO.LOW)
+    GPIO.output(5, GPIO.LOW)
+    GPIO.output(7, GPIO.LOW)
+    GPIO.output(11, GPIO.LOW)
+    GPIO.output(13, GPIO.LOW)
+    GPIO.output(15, GPIO.LOW)
+    GPIO.output(19, GPIO.LOW)
+    GPIO.output(21, GPIO.LOW)
 
 
 def go_forward():
